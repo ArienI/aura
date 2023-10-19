@@ -1,0 +1,147 @@
+.page {
+  background-color: #fff;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.page__no-scroll {
+  overflow: hidden;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.header__logo {
+  padding-left: 320px;
+}
+
+.header__links {
+  max-width: 353px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 64px;
+}
+
+.header__lang-link {
+  color: #06060b;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: none;
+  transition: opacity 0.5s;
+}
+
+.header__button {
+  max-width: 132px;
+  padding: 17px 43px; /* Отступы внутри кнопки */
+  border-radius: 77px;
+  background: var(--black, #07060b);
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Курсор становится "ручкой" при наведении */
+  margin: 15px 320px 15px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero {
+  width: 100%;
+  background-color: #07060b;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__content {
+  max-width: 621px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-color: #07060b;
+  padding-left: 320px;
+}
+
+.hero__title {
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 160px;
+}
+
+.hero__buttons {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  list-style-type: none;
+}
+
+.hero__button {
+  border-radius: 40px;
+  background: var(
+    --button_cta,
+    linear-gradient(180deg, #46f4db 27.08%, #57d272 100%)
+  );
+  display: inline-flex;
+  padding: 25px 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  color: #07060b;
+  text-align: center;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer; /* Курсор становится "ручкой" при наведении */
+}
+
+/* Вид кнопки при нажатии */
+.hero__button:active {
+  background-color: #07060b; /* #07060B цвет фона */
+}
+
+.button-pressed {
+  background-color: #07060b;
+}
+
+.stickers__hero {
+  position: relative; /* Очень важно! */
+  width: 1025px;
+  height: 912px;
+  padding: -51px -81px -181px 976px;
+}
+
+.sticker__hero {
+  position: absolute;
+  width: 1fr; /* или другой размер */
+  height: auto;
+  opacity: 0.5; /* делаем картинки полупрозрачными */
+}
